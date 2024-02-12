@@ -1,3 +1,489 @@
+<!--
+
+.__   __.   ______   .___________. _______     __ 
+|  \ |  |  /  __  \  |           ||   ____|   |  |
+|   \|  | |  |  |  | `---|  |----`|  |__      |  |
+|  . `  | |  |  |  |     |  |     |   __|     |  |
+|  |\   | |  `--'  |     |  |     |  |____    |__|
+|__| \__|  \______/      |__|     |_______|   (__)
+
+I created this portfolio by myself from scratch without any copying and pasting, and it was developed quite some time ago. Therefore, any Non-professionnel coding or scripting does not reflect my current skills. Unfortunately, due to commitments such as school and other projects, I am unable to update it. Initially, this website was built with Node.js and MongoDB. However, I was unable to find a free and fast hosting service for it, so I converted it to a static website, which it remains to this day.
+
+-->
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="home1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div id="upperContainer">
+        <div id="beforeUpperContainer"></div>
+        <div id="uuContainer">
+            <img id="imgWallpaper" src="./pics/Devi.jpg">
+        </div>
+        <div id="luContainer">
+            <div id="mainInfoAcc">
+                <div id="profilePictureZone">
+                    <div id="profilePictureContainer">
+                        <img id="imgProfilePictureMain" src="./pics/prof1.jpg">
+                    </div>
+                </div>
+                <div id="profileNameZone">
+                    <label id="AccNameProfileMain">Aymane Salmane</label>
+                    <label id="AccFriendsNumberProfileMain">1k friends</label>
+                </div>
+                <div id="profileOthersZone">
+                    <div class="POZBtns" id="POZBtns1"><i class="fa-solid fa-user-plus"></i>Add Friend</div>
+                    <div class="POZBtns" id="POZBtns2"><i class="fa-brands fa-facebook-messenger"></i>Message</div>
+                </div>
+            </div>
+            <hr id="profileHr">
+            <div id="listTabAccHead">
+                <div class="tabListProfileHeader" style="pointer-events: none;">
+                    <label style="color: var(--PrimaryBlue);">Posts</label>
+                </div>
+
+                <div class="tabListProfileHeader" style="pointer-events: all;">
+                    <label style="color: var(--SecondText);">Photos</label>
+                </div>
+            </div>
+            <div id="ActiveTabListList">
+                <div class="ActiveTabListPH" style="left: 0px;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="lowerContainer0">
+        <div id="lowerContainer">
+            <div id="leftLowerContainer">
+                <div id="introDiv">
+                    <label>Intro</label>
+                    <p id="bioID">this is my bio</p>
+                    <hr id="profileHr">
+                    <div id="introDivInfo"><div><i class="fa-solid fa-location-dot"></i>                <label id="introDivInfoGrayText">From&nbsp;</label><label>Rabat</label></div><div><i class="fa-solid fa-house"></i>                <label id="introDivInfoGrayText">Lives&nbsp;</label><label>Rabat</label></div><div><i class="fa-solid fa-graduation-cap"></i>                <label id="introDivInfoGrayText">Studie&nbsp;</label><label>Groupe Miage</label></div><div><i class="fa-solid fa-heart"></i>                <label id="introDivInfoGrayText">Célibataire&nbsp;</label><label></label></div></div>
+                    <hr id="profileHr">
+                    <div id="introContactInfo">
+                        <div><i class="fa-solid fa-envelope"></i><label id="iciEmailAdress">aymanesalmane21@gmail.com</label></div>
+                        <div><i class="fa-solid fa-phone"></i><label id="iciNumberPhone">06 03 94 06 39</label></div>
+                    </div>
+                </div>
+                <div id="CompSkills">
+                    <label>Skills</label>
+                    
+                <div class="CompSkillsLang"><div><label>Java</label><label>Basics</label></div><div><label>C#</label><label>Basics</label></div><div><label>Python</label><label>Basics</label></div><div><label>Php</label><label>Basics</label></div><div><label>JavaScript</label><label>Basics</label></div><div><label>Html / Css</label><label>Basics</label></div><div><label>Sql</label><label>Basics</label></div><div><label>C</label><label>Basics</label></div><div><label>Visual Basic</label><label>Basics</label></div><div><label>VB6</label><label>Basics</label></div></div><div class="CompSkillsLang"><div><label>.Net</label><label>Basics</label></div><div><label>Asp.Net</label><label>Basics</label></div><div><label>Laravel</label><label>Basics</label></div><div><label>Qt Framework</label><label>Basics</label></div><div><label>Selenium</label><label>Basics</label></div><div><label>ExpressJs</label><label>Basics</label></div><div><label>Tailwind</label><label>Basics</label></div><div><label>Bootstrap</label><label>Basics</label></div><div><label>EntityFramework</label><label>Basics</label></div></div><div class="CompSkillsLang"><div><label>PyQt5</label><label>Basics</label></div><div><label>Mongoose</label><label>Basics</label></div><div><label>SignalR</label><label>Basics</label></div><div><label>JQuery</label><label>Basics</label></div><div><label>JSoup</label><label>Basics</label></div><div><label>BeautifulSoup</label><label>Basics</label></div><div><label>Tkinter</label><label>Basics</label></div></div><div class="CompSkillsLang"><div><label>MongoDb</label><label>Basics</label></div><div><label>MySql</label><label>Basics</label></div><div><label>SqlServer</label><label>Basics</label></div><div><label>Oracle</label><label>Beginner</label></div></div><div class="CompSkillsApps"><div><label>NodeJs</label></div><div><label>Git/GitHub</label></div><div><label>MVC</label></div></div><div class="CompSkillsApps"><div><label>Visual Studio</label></div><div><label>NetBeans</label></div><div><label>Vs Code</label></div><div><label>Eclipse</label></div><div><label>Dev-C++</label></div></div></div>
+            </div>
+            <div id="rightLowerContainer">
+
+                <div id="postPost">
+                    <label>Projects</label>
+                </div>
+            <div name="Aymane.Salmane" id="5YMZo3D4d7ZtecA6wDgoUdpJnsmp87bglAPHzAqrd2THo6A6uUVzd1FbsDv6QY6ff3HeN2GwWzKcKifqsq5nllCu4xZwOuaF6xlu" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Portfolio Personnel</b><ol><li>Langages et Technologies Utilisés : HTML, CSS, JavaScript, Node.js, MongoDB, Mongoose, Express.js, Ejs</li><li>Description : Conception et développement de mon portfolio personnel en utilisant un ensemble de technologies web modernes, notamment HTML, CSS, JavaScript, Node.js, MongoDB, Mongoose, Express.js et Ejs. Le portfolio met en valeur mes compétences en développement web et mon travail antérieur.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="zfs1OidoqnQJhFNkcS341XjZdUimZFfX7u1M8EZCIXDRhPOJg0mn3q3b5SY4A0PlH3MxNAmY30vdTS2NFYGic1eQ0aRppfCSIcJo" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Développement d'un Système ATM interactif</b><ol><li>Langages : JAVA, MySQL</li><li>Description : Conception d'un système ATM avec une interface utilisateur graphique (GUI) similaire à un jeu vidéo. Les fonctionnalités incluent la consultation, le transfert et le dépôt d'argent.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="Db5fONuC5aHnaLyluqIQY66xt6tYydU1IOJodlUPGcVaSnPeqaicU3PGeIvReWNbFQeLBJIJV2J6lfeFrOrY52gP9DKUzDuuO3VC" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Bot d'automatisation pour Instagram</b><ol><li>Langages : C#, Selenium</li><li>Description : Création d'un bot Instagram capable de visualiser les stories, aimer les publications et commenter pour augmenter l'activité du profil.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="JDdhRYGbtSf8npkPpyfNtOM89yTSIYrrKc6nvJGgvEfqhLqJdeFZYHS41fidFyTUlxxLt6efr8bosgaxHKynTRSDKBvQlnb6vLFt" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Jeu du serpent</b><ol><li>Langage : JAVA</li><li>Description : Développement d'un jeu classique du serpent en JAVA.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="XfZgAjrapnLVEuV49qATfuBrKO3Egf3haqZluSntk2Xg0aL1Sg7EKwOnesVvqn3Ktn4YUuKrDRtmXe1uDCw9izXobwHC71D68MwM" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Application de gestion de la batterie</b><ol><li>Langage : JAVA</li><li>Description : Création d'une application JAVA affichant une fenêtre contextuelle sur le côté de l'écran lorsque la batterie de l'ordinateur portable atteint 100 %.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="fwgiWPB3DlP91lsn14m4QP6imIuLNwoLroOQgOnSydl0gHKVIZFEj25Q075OfzpQ7ERMWcHnQUGwoGBe7YDxrklzs8ZiSYw8yV2b" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Application de gestion d'entreprise</b><ol><li>Langages : C#, MySQL</li><li>Description : Réalisation d'une application C# comprenant un système de login et des fonctionnalités de gestion d'entreprise et d'employés, utilisant une base de données MySQL.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="089qSbxOwIlt6aRHw2jXdcdYCjU2iH8TNko8YWfPwWDkWql2HoM5wf8XeknsH5qoJSfWvSsZWTkGY3BW7cv34DhslQeytxI0pZaE" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Projet de recherche de voitures d'occasion</b><ol><li>Langages : HTML, CSS, PHP, JS, MySQL</li><li>Description : Projet de recherche de voitures d'occasion au Maroc, permettant la recherche sur plusieurs sites tels qu'Avito, Wandaloo, etc en même temps.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="KPGy6xjc419kjRuoKxtGvxuey4qjKua9d7LrV67GdExtR3ObCdq2pTSXfl9BH9RKb9HlFCTNzmmq9AN5pOgrDhUJpyMu659ewmSR" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Extension Google Chrome de conversion de devise</b><ol><li>Langages : HTML, JS, API</li><li>Description : Création d'une extension Google Chrome permettant la conversion de devises en temps réel directement dans le contenu HTML d'un site web.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="vnV9KcCCqlXeXEV2ckH3p86R0iR4nI4Ws6JC3ghlfScDbrW1jGBMfZlxqDJlLIYirAvb5T96CfYXf20IMZUgHr0TUWVzX5ZW34Wa" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Programme de chat similaire à WhatsApp</b><ol><li>Langages : C#, MySQL</li><li>Description : Développement d'un programme de messagerie instantanée avec la possibilité d'ajouter des contacts et de créer des groupes.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="656QHFKAAORyNBZvx1aAJcHi7KiGFBdlgaMRcEZCh0SFFhmVgniBdWQdxXS7gD49upRxzHTtcYcSJBdaiMkbccIKJsdEwcfe6TUZ" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Bot Instagram de publication automatique</b><ol><li>Langage : C#</li><li>Description : Conception d'un bot Instagram capable de publier automatiquement des photos à partir d'un dossier sélectionné.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="PygYUzjE38Uw41YTccgShHoGoO7938VzqEKtqLHn2DRKXrK4DMBexC2IKZuG2kK4mfF0rpnQU2Zdzdt7DC5r60CnLBiQbAvS3Wi2" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Application de génération d'images aléatoires</b><ol><li>Langages : Python, tkinter</li><li>Description : Création d'une application en Python générant des images aléatoires pour une recherche spécifique et les affichant dans une zone d'image, sans doublons à chaque utilisation.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="lUNYiuJ4mYTqqwCzod8vcbopGXzTHHkd50VtyhILqIBxs2jo85nZYwZJphRL5zwfyzvzbSAHUwEUa07OxKVMdKFIbMDRP7Q0Vf93" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Application TV Multimédia</b><ol><li>Langage : C#</li><li>Description : Création d'une application TV qui propose des chaînes telles que BeIN Sport et MBC.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="GtNp4fEmsFtzkCXuejBntnYPPt1XfN841DIE7qS7GdaVcOqMkfWweVJcV8aKorGeGy7h4SxyRDhQNCwADpw90Maf4qt9PITYX5Po" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Jeux 3D et 2D</b><ol><li>Langages : C#, Unity</li><li>Description : Développement de jeux en 3D et 2D en utilisant C# et le moteur Unity.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div><div name="Aymane.Salmane" id="RJSRsifay3OSMZG95Gn3XbmOjxiItJ3SxHt4WeQSr9rBbbx0CUdQRVQzgEs4AWqpA6eEqLma0VMYulwIAsGZpnAc03YSwVSVSBBf" class="postLowerContainer">                    <div id="postHeaderContainer">                        <div id="upperPostHeaderContainer">                            <div id="UPHC1">                                <div id="profileImgPostHeader">                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">                                </div>                            </div>                            <div id="UPHC2">                                <label id="postAccName">Aymane Salmane</label>                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>                            </div>                            <div id="UPHC3">                                <div id="postSaveBtn">                                    <i class="fa-regular fa-bookmark"></i>                                </div>                            </div>                        </div>                        <div id="lowerPostHeaderContainer">                            <p class="postCaption"></p><ul><li><b>Jeu de Dames</b><ol><li>Langage : Java</li><li>Description : Conception d'un jeu de dames en Java.</li></ol></li></ul><p></p>
+                                                        <p></p>                        </div>                    </div>                    <div id="postImgContainer" style="">                                            </div>                    <div class="postBtnsContainer">                        <div class="likeBtnPost">                            <div class="likeBtnPostInactive">                                <i class="fa-regular fa-heart"></i>                            </div>                            <div class="likeBtnPostActive">                                <i class="fa-solid fa-heart"></i>                            </div>                        </div>                        <div class="shareBtnPost">                            <i class="fa-solid fa-arrow-up-right-from-square"></i>                        </div>                    </div>                </div></div>
+        </div>
+    </div>
+
 <script>
-    window.location.href = "https://aymanecv.onrender.com";
+    
+    /*
+    getData();
+    function getData()
+    {
+        fetch("/",{
+            method:"post",
+            headers:{"Content-Type":"application/json"},
+        }).then(res=>res.json()).then(data=>{
+                data.payLoadData.forEach((e)=>{
+                    if(e.userID == accEmail)
+                    {
+                        accInfo(e);
+                    }
+                })
+        });
+    }
+    
+    function accInfo(accArray)
+    {
+        let UserName = accArray.UserName;
+        let security = {
+
+            Email : accArray.security["Email"],
+            Password : accArray.security["Password"]
+
+        }
+        let infoTable = {
+
+            infoTableID : accArray.infoTable["infoTableID"],
+            userName : accArray.infoTable["userName"],
+            Name : accArray.infoTable["Name"],
+            LastName : accArray.infoTable["LastName"],
+            bio : accArray.infoTable["bio"]
+        }
+        console.log("accArray.infoContact");
+        console.log(accArray.infoContact);
+        let introTable = accArray.introTable; //object lives in ...
+
+        let skillsTable = accArray.skills;  //object-skills => object-object => array-object zones => objects
+                                            //array-array zones => values
+
+        let postsTable = accArray.postsTable; //objects inside array
+
+        infoTableFun(infoTable);
+        introTableFun(introTable);
+        skillsTableFun(skillsTable);
+        postsTableFun(postsTable);
+        introContactInfoFun(accArray.infoContact);
+    }
+    
+    function introContactInfoFun(_introcontactinfo)
+    {
+        let iciNumberPhone = document.getElementById("introContactInfo");
+
+        iciNumberPhone.querySelector("#iciEmailAdress").textContent = _introcontactinfo["email"];
+        iciNumberPhone.querySelector("#iciNumberPhone").textContent = _introcontactinfo["phone"];
+
+    }
+    
+    function infoTableFun(_infoTable)
+    {
+        let nameProfDoc = document.getElementById("AccNameProfileMain");
+        let bioProfDoc = document.getElementById("bioID");
+
+        nameProfDoc.innerHTML = _infoTable["userName"];
+        bioProfDoc.innerHTML = _infoTable["bio"];
+    }
+    
+    function introTableFun(_introTable)
+    {
+        var infoIntroZoneDoc = document.getElementById("introDivInfo");
+        infoIntroZoneDoc.innerHTML = "";
+
+        _introTable.forEach((e)=>{
+            Object.entries(e).forEach((s)=>{
+
+                let typeIcon = "";
+
+                if(s[0]=="From")
+                    typeIcon = "fa-solid fa-location-dot";
+
+                if(s[0]=="Lives")
+                    typeIcon = "fa-solid fa-house";
+
+                if(s[0]=="Studie")
+                    typeIcon = "fa-solid fa-graduation-cap";
+
+                if(s[0]=="CivStatus"){
+                    typeIcon = "fa-solid fa-heart";
+                    s[0] = s[1];
+                    s[1] = "";
+                }
+
+                infoIntroZoneDoc.innerHTML += '<div><i class="' + typeIcon + '"></i>\
+                <label id="introDivInfoGrayText">' + s[0] + '&nbsp;</label><label>' + s[1] + '</label></div>'
+
+
+
+
+            });
+        });
+
+    }
+
+    function skillsTableFun(_skillsTable)
+    {
+        var CompSkills = document.getElementById("CompSkills");
+
+        _skillsTable.forEach((e)=>{
+
+            let fullAddLang = '<div class="CompSkillsLang">';
+            let fullAddApp = '<div class="CompSkillsApps">';
+
+            let containerAds = "";
+
+            if(e["array"] != undefined)
+            {
+                e["array"].forEach((s)=>{
+                    containerAds += '<div><label>' + s + '</label></div>';
+                });
+
+                CompSkills.innerHTML += fullAddApp + containerAds + "</div>";
+
+            }else{
+                Object.entries(e["object"]).forEach((s)=>{
+                    containerAds += '<div><label>' + s[0] + '</label><label>' + s[1] + '</label></div>';
+                });
+
+                CompSkills.innerHTML += fullAddLang + containerAds + "</div>";
+            }
+        });
+    }
+
+    function postsTableFun(_postsTable)
+    {
+        var rightLowerContainer = document.getElementById("rightLowerContainer");
+
+        Object.entries(_postsTable).forEach((e)=>{
+            let objPost = e[1];
+            //POST GENERALE
+            let postUserID = objPost["userNameID"];
+            let PostID = objPost["PostID"];
+            let userName = objPost["userName"];
+            let Caption = objPost["Caption"];
+            let Image = objPost["Image"]; //Array
+            console.log(Image);
+            let NewImage = "";
+            if(Image != "")
+            {
+                if(Image.length == 3)
+                {
+
+                }
+                let index = 0;
+                Image.forEach((e)=>{
+                    
+                    if(index > 3)
+                    {
+                        return;
+                    }
+
+                    if (index == 2 && Image.length == 3)
+                    {
+                        NewImage += `<div style="grid-column:span 2;" class="divPostContainer"><img class="postImg" src="${e}" style="height: 100%; width: auto; left: 50%; transform: translateX(-50%);"></div>`;
+                    }else{
+                        if(Image.length > 4)
+                        {
+                            if(index == 3)
+                            {
+                                let newCount = Image.length - 3;
+                                NewImage += `<div class="divPostContainer" style="position:relative;"><label class="seeMorePics">+${newCount}</label><img class="postImg" src="${e}" style="opacity: 20%; height: 100%; width: auto; left: 50%; transform: translateX(-50%);"></div>`;
+                            }else{
+                                NewImage += `<div class="divPostContainer" style="position:relative;"><img class="postImg" src="${e}" style="height: 100%; width: auto; left: 50%; transform: translateX(-50%);"></div>`;
+                            }
+                        }else{
+                            NewImage += `<div class="divPostContainer" style="position:relative;"><img class="postImg" src="${e}" style="height: 100%; width: auto; left: 50%; transform: translateX(-50%);"></div>`;
+                        }
+                    }
+                    index += 1;
+                    
+                });
+
+            }else{
+                NewImage = "";
+            }
+            let stylePics = pictureStackPost(Image.length);
+            let postText = `<div name="${postUserID}" id="${PostID}" class="postLowerContainer">\
+                    <div id="postHeaderContainer">\
+                        <div id="upperPostHeaderContainer">\
+                            <div id="UPHC1">\
+                                <div id="profileImgPostHeader">\
+                                    <img src="./pics/prof1.jpg" class="ImageProfilePost">\
+                                </div>\
+                            </div>\
+                            <div id="UPHC2">\
+                                <label id="postAccName">${userName}</label>\
+                                <div><label id="PostTime">40 min ago</label><a>•</a><i id="audienceBtnPost" class="fa-solid fa-globe"></i></div>\
+                            </div>\
+                            <div id="UPHC3">\
+                                <div id="postSaveBtn">\
+                                    <i class="fa-regular fa-bookmark"></i>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <div id="lowerPostHeaderContainer">\
+                            <p class="postCaption">${Caption}</p>
+                            <p class="seeMoreP">see more</p>\
+                            <p></p>\
+                        </div>\
+                    </div>\
+                    <div id="postImgContainer" style="${stylePics}">\
+                        ${NewImage}\
+                    </div>\
+                    <div class="postBtnsContainer">\
+                        <div class="likeBtnPost">\
+                            <div class="likeBtnPostInactive">\
+                                <i class="fa-regular fa-heart"></i>\
+                            </div>\
+                            <div class="likeBtnPostActive">\
+                                <i class="fa-solid fa-heart"></i>\
+                            </div>\
+                        </div>\
+                        <div class="shareBtnPost">\
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>\
+                        </div>\
+                    </div>\
+                </div>`;
+                
+            rightLowerContainer.insertAdjacentHTML('beforeend',postText);
+            addEventLisss(PostID,Image.length);
+            OpenPostImage(PostID);
+            
+        
+        });
+    }
+    function pictureStackPost(picCount)
+    {
+        let styleReturn = "";
+        if(picCount == 1)
+        {
+            styleReturn = "";
+        }else if(picCount == 2)
+        {
+            styleReturn = "grid-template-columns:1fr 1fr;grid-template-rows:1fr";
+        }else if(picCount >= 3)
+        {
+            styleReturn = "grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr";
+        }
+        return styleReturn;
+    }
+
+    function OpenPostImage(PostID)
+    {
+        let post = document.getElementById(PostID);
+        let postUserID = post.getAttribute("name");
+
+        post.querySelectorAll(".postImg").forEach((e)=>{
+            e.addEventListener("click",e=>{
+                
+                console.log("hyy");
+                fetch("form",{
+                    method:"post",
+                    headers:{"Content-Type":"application/json"},
+                    body:JSON.stringify({accLink:postUserID,postLink:PostID})
+                }).then(res=>res.json()).then(data=>{
+                    
+                    window.location.href = `http://localhost:5000/acc?postUserID=${postUserID}&postID=${PostID}`;
+                });
+            });
+        });
+
+    }
+
+    function addEventLisss(PostID,ImLength)
+    {
+        var postImg = document.getElementById(PostID);
+        if(ImLength == 1 || ImLength == 0)
+        {
+            postImgSizeFixer(postImg);
+        }
+                
+            postImg.querySelectorAll(".seeMoreP")[0].addEventListener("click", (e) => {
+                seeMorePFunc(e.currentTarget);
+            });
+            checkSeeMoreIf(postImg);
+            postImg.querySelectorAll(".likeBtnPost")[0].addEventListener("click", (e) => {
+                likeBtnPostSystem(e.target);
+            });
+    }
+
+
+    function likeBtnPostSystem(postImg0) {
+        var activeBtn = postImg0.getElementsByClassName("likeBtnPostActive")[0];
+        var inactiveBtn = postImg0.getElementsByClassName("likeBtnPostInactive")[0];
+
+        if (getComputedStyle(activeBtn).opacity != "1") {
+            activeBtn.style.opacity = "1";
+            inactiveBtn.style.opacity = "0";
+        } else {
+            activeBtn.style.opacity = "0";
+            inactiveBtn.style.opacity = "1";
+        }
+
+    }
+    function postImgSizeFixer(postImg0) {
+
+            postImg0 = postImg0.getElementsByClassName("postImg")[0];
+            if(postImg0 == undefined)
+            {
+                return;
+            }
+
+            if (postImg0.clientHeight > postImg0.clientWidth) {
+                postImg0.style.height = "100%";
+                postImg0.style.width = "auto";
+                postImg0.style.left = "50%";
+                postImg0.style.transform = "translateX(-50%)";
+            }
+            
+            if (postImg0.clientHeight < postImg0.clientWidth) {
+                postImg0.style.height = "auto";
+                postImg0.style.width = "100%";
+                postImg0.parentNode.style.height = (postImg0.clientHeight).toString() + "px";
+
+            }
+
+            if (postImg0.clientHeight == postImg0.clientWidth) {
+                postImg0.style.height = "497px";
+                postImg0.style.width = "497px";
+            }
+        }
+
+    function checkSeeMoreIf(postCheckSeeMore) {
+        var postCaption = postCheckSeeMore.getElementsByClassName("postCaption")[0];
+        var lineNumber = postCaption.clientHeight / parseInt(getComputedStyle(postCaption).lineHeight.replace("px", ""));
+        var postSeeMore = postCheckSeeMore.getElementsByClassName("seeMoreP")[0];
+        if ((postCaption.clientHeight == postCaption.scrollHeight) && postSeeMore.innerHTML != "see less") {
+            postSeeMore.remove();
+
+        }
+    }
+
+    function seeMorePFunc(seeMorePElement) {
+        var parentDiv = seeMorePElement.parentNode.querySelectorAll("p");
+        if (parentDiv[1].innerHTML == "see more") {
+            parentDiv[0].style.webkitBoxOrient = "horizontal";
+            parentDiv[1].innerHTML = "see less";
+        } else {
+            parentDiv[0].style.webkitBoxOrient = "vertical";
+            parentDiv[1].innerHTML = "see more";
+        }
+    }
+    */
 </script>
+
+<script>
+    /*
+    window.addEventListener("load", start, false);
+    function start() {
+        listTabAct();
+        function listTabAct() {
+            var ActiveTabListPH = document.getElementsByClassName("ActiveTabListPH")[0];
+            var tabListProfileHeader = document.getElementsByClassName("tabListProfileHeader");
+            tabListProfileHeader[0].addEventListener("click", (e) => {
+                ActiveTabListPH.style.left = "0px";
+
+                tabListProfileHeader[0].querySelectorAll("label")[0].style.color = "var(--PrimaryBlue)";
+                tabListProfileHeader[1].querySelectorAll("label")[0].style.color = "var(--SecondText)";
+
+                tabListProfileHeader[0].style.pointerEvents = "none";
+                tabListProfileHeader[1].style.pointerEvents = "all";
+
+            });
+            tabListProfileHeader[1].addEventListener("click", (e) => {
+                ActiveTabListPH.style.left = "100px";
+                tabListProfileHeader[0].querySelectorAll("label")[0].style.color = "var(--SecondText)";
+                tabListProfileHeader[1].querySelectorAll("label")[0].style.color = "var(--PrimaryBlue)";
+
+                tabListProfileHeader[0].style.pointerEvents = "all";
+                tabListProfileHeader[1].style.pointerEvents = "none";
+            });
+
+        }
+    }
+    */
+</script>
+</body></html>
