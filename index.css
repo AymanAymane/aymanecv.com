@@ -1,0 +1,588 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+:root{
+    --thirdColor:rgb(0, 0, 0,0.2);
+    --PrimaryBlue:#0866ff;
+    --SecondGray:#e4e6eb;
+    --SecondText:rgba(0, 0, 0, 0.700);
+    --actLp:rgb(202, 202, 202);
+}
+#globalMainPageHeader{
+    position:relative;
+    top:0;
+    height:50px;
+    background-color:red;
+}
+body{
+    overflow-x: hidden;
+    background-color:#f0f2f5;
+}
+#beforeUpperContainer{
+    background-color: rgb(255, 255, 255);
+    width:100vw;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.305);
+    overflow:hidden;
+}
+#upperContainer{
+    z-index: 1;
+    height:auto;
+    width:940px;
+    max-width:95%;
+    background-color:rgb(0, 255, 13);
+    left:50%;
+    transform:translateX(-50%);
+    position:relative;
+    display: grid;
+    grid-template-rows:max-content 1fr;
+}
+#uuContainer{
+    background-color:rgba(255, 255, 0, 0);
+    overflow: hidden;
+    position:relative;
+    min-height:200px;
+    max-height:300px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+#imgWallpaper{
+    position:relative;
+    width:100%;
+    height:auto;
+    top:50%;
+    transform:translateY(-50%);
+}
+#luContainer{
+    background-color: rgba(255, 0, 212, 0);
+    display: grid;
+    grid-template-rows: max-content max-content 70px max-content;
+    width:95%;
+    left:50%;
+    height:100%;
+    transform:translateX(-50%);
+    position:relative;
+}
+#luContainer hr{
+    margin:5px 0px 5px 0px;
+}
+#ActiveTabListList{
+    grid-row:span 4;
+    height:4px;
+}
+#mainInfoAcc{
+    min-height:105px;
+    display:grid;
+    grid-template-columns:190px 1fr 1fr;
+    background-color: rgba(255, 0, 0, 0);
+    width:100%;
+    grid-template-rows: 100%;
+}
+#profilePictureZone{
+    height:100%;
+    width:100%;
+    position:relative;
+}
+#profilePictureContainer{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:-50px;
+    height:150px;
+     width:150px;
+    background-color:rgba(255, 166, 0, 0);
+    border-radius:50%;
+    overflow:hidden;
+    outline: 4px solid white;
+}
+#imgProfilePictureMain{
+    height:auto;
+    width:100%;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+#profileHr{
+    width:100%;
+    border:none;
+    border-top:1px solid var(--thirdColor);
+}
+#profileNameZone{
+    display: flex;
+    flex-direction:column;
+    margin-top: 5px;
+    gap:5px;
+    overflow:hidden;
+    
+}
+#AccNameProfileMain{
+    width:100%;
+    word-wrap:break-word;
+    font-size:38px;
+}
+#AccFriendsNumberProfileMain{
+    font-size:22px;
+    color:var(--SecondText);
+}
+#profileOthersZone{
+    background-color: rgba(255, 192, 203, 0);
+    display: grid;
+    grid-template-columns: 48% 48% 1fr;
+    grid-column-gap: 10px;;
+    
+}
+.POZBtns{
+    width:100%;
+    height:40px;
+    position:relative;
+    border-radius:7px;
+    top:50%;
+    transform:translateY(-50%);
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    font-size:17px;
+    cursor: pointer;
+}
+#POZBtns1{
+    background-color: var(--PrimaryBlue);
+    color:white;
+    display: flex;
+    gap:6px;
+}
+#POZBtns2{
+    background-color: var(--SecondGray);
+    color:black;
+    gap:6px;
+    display: flex;
+}
+
+#listTabAccHead{
+    background-color:rgba(255, 166, 0, 0);
+    display:grid;
+    height:100%;
+    grid-auto-flow:column;
+    grid-auto-columns:100px;
+}
+.tabListProfileHeader{
+    background-color: rgba(47, 255, 0, 0);
+    height:100%;
+    width:100%;
+    position:relative;
+    border-radius:10px;
+    cursor:pointer;
+    overflow:hidden;
+}
+.ActiveTabListPH{
+    background-color:var(--PrimaryBlue);
+    height:100%;
+    width:100px;
+    bottom:0;
+    left:0px;
+    position:relative;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    transition: all 500ms;
+}
+.tabListProfileHeader label{
+    color:var(--SecondText);
+    height:100%;
+    width:100%;
+    position:relative;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    font-size:20px;
+    justify-content:center;
+    align-items:center;
+    pointer-events: none;
+    transition:all 200ms;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius:10px;
+}
+.tabListProfileHeader:hover label{
+    background-color:var(--actLp);
+}
+
+#lowerContainer0{
+    background-color:#f0f2f5;
+    height:100%;
+    width:100%;
+    position:relative;
+}
+#lowerContainer{
+    background-color:rgba(255, 255, 255, 0);
+    width:940px;
+    max-width:95%;
+    height:max-content;
+    left:50%;
+    transform:translateX(-50%);
+    position:relative;
+    display: grid;
+    grid-template-columns:45% calc(55% - 20px);
+    grid-column-gap:20px;
+    z-index: 2;
+    top:30px;
+    padding-bottom:40px;
+}
+#introDiv{
+    background-color: white;
+    height: auto;
+    width: calc(100%-10px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.305);
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content max-content;
+    grid-row-gap: 5px;
+}
+#introDiv{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:max-content max-content max-content max-content;
+    grid-row-gap:25px;
+}
+#introDiv div{
+    grid-template-columns:30px max-content max-content;
+}
+#introDiv > label{
+    font-size:22px;
+}
+#introDiv p{
+    text-align:center;
+}
+#introDivInfo div,#introContactInfo div{
+    display: grid;
+    grid-template-columns: 30px max-content auto;
+    grid-template-rows: max-content;
+    margin-bottom:10px;
+}
+#introDivInfo div label,#introDiv p{
+    font-size:18px;
+}
+#introDivInfoGrayText,#leftLowerContainer i{
+    color: var(--SecondText);
+}
+#leftLowerContainer i{
+    justify-content: center;
+    display: flex;
+    
+}
+#rightLowerContainer{
+    display:grid;
+    grid-auto-flow: rows;
+    grid-auto-rows: max-content;
+    grid-auto-columns:100%;
+    grid-row-gap:20px;
+    position:relative;
+}
+.postLowerContainer{
+    width:100%;
+    background-color:white;
+    position:relative;
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.305);
+    border-radius:10px;
+    display:grid;
+    grid-template-rows:max-content max-content 50px;
+    grid-template-columns:100%;
+}
+#postHeaderContainer{
+    display: grid;
+    grid-template-rows:max-content max-content;
+    grid-row-gap:10px;
+}
+#upperPostHeaderContainer{
+    padding:10px 10px 0px 10px;
+    display:grid;
+    grid-auto-flow:column;
+    grid-template-columns:60px calc(100% - 120px) 60px;
+}
+#profileImgPostHeader{
+    background-color:pink;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    overflow:hidden;
+}
+#UPHC2{
+    margin-top:3px;
+    padding:0px 20px 0px 10px;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    overflow:hidden;
+}
+#UPHC2 div{
+    display:flex;
+    gap:8px;
+}
+#postAccName{
+    width:100%;
+    word-wrap:break-word;
+    font-size:20px;
+}
+#PostTime{
+    font-size:16px;
+}
+#UPHC2 > div{
+    color:var(--SecondText);
+}
+#audienceBtnPost{
+    cursor: pointer;
+}
+#postSaveBtn{
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items:center;
+    display:flex;
+    font-size:23px;
+    cursor:pointer;
+}
+#postImgContainer{
+    background-color:rgb(0, 0, 0);
+    max-height:497px;
+    width:100%;
+    position:relative;
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-gap:5px;
+}
+
+
+.divPostContainer{
+    position: relative;
+    overflow: hidden;
+}
+.postImg{
+    position: relative;
+    width:100%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+
+#lowerPostHeaderContainer{
+    padding:0px 11px 11px 11px;
+    width:100%;
+    box-sizing:border-box;
+    overflow: hidden;
+}
+#lowerPostHeaderContainer .postCaption{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    overflow:hidden;
+    max-width:500px;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    line-clamp:3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height:20px;
+}
+.seeMoreP{
+    text-decoration:underline;
+    color:var(--PrimaryBlue);
+    cursor:pointer;
+}
+.postBtnsContainer{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+.postBtnsContainer > div{
+    margin:5px;
+    border-radius:10px;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    font-size:25px;
+    box-shadow: 0px 0px 2px rgb(0,0,0,0.5);
+    cursor:pointer;
+    transition:all 300ms;
+}
+.postBtnsContainer > div:hover{
+    background-color: rgb(195, 194, 194);
+}
+.likeBtnPostActive{
+    color:rgb(220, 0, 0);
+    opacity: 0;
+    transition:opacity 300ms;
+    position:absolute;
+}
+.ImageProfilePost{
+    width:100%;
+    height:auto;
+
+}
+#postPost{
+    background-color:#ffffff;
+    height:max-content;
+    border-radius: 10px;
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.305);
+    padding:10px;
+    position:relative;
+    display:grid;
+    grid-template-columns: max-content 1fr;
+    transition:all 500ms;
+    font-size:22px;
+}
+#postPost:hover{
+    background-color:rgb(191, 191, 191);
+}
+#typePostNew{
+    top:0;
+    transition:all 500ms;
+    background-color: red;
+    width:100%;
+    height:100px;
+    float:right;
+
+    transition:all 500ms;
+    position:relative;
+}
+#leftLowerContainer{
+    display:grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: 1fr;
+    grid-row-gap:20px;
+}
+#CompSkills{
+    background-color:white;
+    height:calc(100%);
+    border-radius:10px;
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.305);
+    display:grid;
+    grid-auto-rows:max-content;
+    grid-row-gap:25px;
+    box-sizing:border-box;
+    padding:10px;
+    
+}
+#CompSkills > label{
+    font-size:22px;
+}
+#CompSkills > div{
+    display:grid;
+    grid-row-gap:3px;
+}
+.CompSkillsLang > div{
+    font-size:18px;
+    align-items:center;
+    display:grid;
+    background-color:rgba(220, 220, 220, 0.204);
+    border-radius:10px;
+    grid-template-columns: 1fr 1fr;
+    overflow:hidden;
+}
+.CompSkillsApps{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:5px;
+
+}
+.CompSkillsApps > div{
+    font-size:18px;
+    align-items:center;
+    display:grid;
+    border-radius:10px;
+    overflow:hidden;
+}
+#CompSkills > div > div > label{
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CompSkillsLang > div > label:nth-of-type(2)
+{
+    background-color: var(--SecondGray);
+    border-top: 1px solid rgba(0, 0, 0, 0.041);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.041);
+    border-right: 1px solid rgba(0, 0, 0, 0.041);
+}
+.CompSkillsLang > div > label:nth-of-type(2)
+{
+    background-color: var(--SecondGray);
+}
+
+.CompSkillsLang > div > label:nth-of-type(1)
+{
+    background-color: rgba(220, 220, 220, 0.204);
+    border:1px solid rgba(0, 0, 0, 0.12);
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.CompSkillsApps > div > label
+{
+    background-color:rgba(220, 220, 220, 0.204);
+    border-radius:10px;    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.seeMorePics{
+    z-index:2;
+    font-size:30px;
+    color:white;
+    width:100%;
+    top:45%;
+    text-align: center;
+    transform:translateY(-50%);
+    position:absolute;
+    cursor:pointer;
+}
+ol{
+    padding-left:20px;
+    padding-top:10px;
+}
+
+#introContactInfo *{
+    font-size:18px;
+}
+
+@media all and (max-width:900px)
+{
+    #upperContainer{
+        height:95%;
+    }
+    #lowerContainer{
+        
+        grid-template-columns:100%;
+        grid-row-gap:15px;
+    }
+    #luContainer{
+        grid-template-rows: max-content 2px 70px max-content;
+    }
+    #mainInfoAcc{
+        display:grid;
+        grid-template-columns:1fr;
+        background-color: rgba(255, 0, 0, 0);
+        width:100%;
+        grid-template-rows: 100px max-content max-content;
+        grid-row-gap:10px;
+    }
+    #profileNameZone{
+        justify-content: center;
+        align-items: center;
+    }
+    #AccNameProfileMain{
+        text-align:center;
+    }
+}
